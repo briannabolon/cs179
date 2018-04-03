@@ -15,29 +15,39 @@
     </head>
 
     <body>
-    <nav class="navigation">
-        <section class="container"><a class="navigation-title" href="">
-            <h1 class="title" id="title">Quick Careers</h1>
-            <ul class="navigation-list float-right">
-                <li class="navigation-item"><a class="navigation-link" href="signup.html" data-popover="">Log in/Sign up</a>
-                <li class="navigation-item"><a class="navigation-link" href="#popover-support" data-popover="">About us</a>
-            </li>
-        </section>
-    </nav>
+      <nav class="navigation">
+          <section class="container"><a class="navigation-title" href="">
+              <h1 class="title" id="title">Quick Careers</h1>
+              <ul class="navigation-list float-right">
+                  <li class="navigation-item"><a class="navigation-link" href="train.html" data-popover="">Train</a></li>
+                  <li class="navigation-item"><a class="navigation-link" href="work.html" data-popover="">Work</a></li>
+                <!-- create dropdown -->
+                <div class="dropdown">
+                  <li class="navigation-item" onclick="myFunction()"><a class="navigation-link drop_button" data-popover="">More Options</a></li>
+                  <!-- <button onclick="myFunction()" class="button button-clear drop_button">More Options</button> -->
+                  <div id="myDropdown" class="dropdown-content">
+                    <a href="schedule.html">Schedule Test</a>
+                    <a href="editprofile.html">Edit Profile</a>
+                    <a href="logout.html">Logout</a>
+                  </div>
+                </div>
+              </ul>
+          </section>
+      </nav>
 
     <section class="mainContainer row">
 
         <div class="column column-10"></div>
-      
+
         <div class="column column-80">
 
             <h2>Welcome.</h2>
-            
+
         </div>
 
     </section>
 
-      
+
 
     </body>
 
